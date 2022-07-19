@@ -4,26 +4,36 @@ import json
 
 # Apple variables
 
-# Use this list to choose local stores to filter from.
-# Apple search results choose the 12 closest stores to your zip code, which
-# can mean very far away stores.
+"""
+Use this list to choose local stores to filter from.
+Apple search results choose the 12 closest stores to your zip code, which
+can mean very far away stores. These names can be found on
+https://www.apple.com/retail/storelist/
+"""
 
 local_stores = [
-
+    "Store Name 1",
+    "Store Name 2"
 ]
 
-# Put the models you want to search for here.
-# Format: ["ModelID", "FriendlyModelName"]
-# FriendlyModelName can be whatever you want. ModelID has to be the Apple model
-# ID, WITHOUT the /A. This breaks the URL formatting and is added manually.
+"""
+Put the models you want to search for here.
+Format: ["ModelID", "FriendlyModelName"]
+FriendlyModelName can be whatever you want. ModelID has to be the Apple model
+ID, WITHOUT the /A. This breaks the URL formatting and is added manually.
+"""
 
 models = [
-
+    ["ModelID", "FriendlyModelName"]
 ]
 
 zip_code = "" # Put your search zip code in here.
 
-# Slack variables
+"""
+Slack variables.
+You can put a webhook URL here if you want the script to post a Slack message.
+If you leave it blank, it'll skip.
+"""
 
 slack_webhook = ""
 
