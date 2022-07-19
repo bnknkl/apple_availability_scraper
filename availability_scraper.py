@@ -30,9 +30,9 @@ models = [
 zip_code = "" # Put your search zip code in here.
 
 """
-Slack variables.
-You can put a webhook URL here if you want the script to post a Slack message.
-If you leave it blank, it'll skip.
+You can put a Slack webhook URL here if you want the script to post a Slack message.
+If you leave it blank, it'll skip this and just give you the info in the terminal.
+Follow your heart.
 """
 
 slack_webhook = ""
